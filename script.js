@@ -36,6 +36,7 @@ startButton.addEventListener('click', () => {
     colorButtons.forEach(button => button.disabled = false)
     setTargetColor()
     scoreElement.textContent = '0'
+    isgameRunning = true
 })
 
 
@@ -75,5 +76,5 @@ resetButton.addEventListener('click', () => {
     scoreElement.textContent = '0';
     messageElement.textContent = '';
     timeElement.textContent = '10';
-    colorButtons.forEach(button => button.disabled = true);
+    colorButtons.forEach(button => button.disabled = false);
 });

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Color Click Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎨 Color Click Game</h1>
+
+        <p class="instructions">
+            Click the correct color before time runs out!
+        </p>
+
+        <div class="game-info">
+            <p>Target Color: <span id="targetColor">Red</span></p>
+            <p>Score: <span id="score">0</span></p>
+            <p>Time Left: <span id="time">10</span>s</p>
+        </div>
+
+        <div class="color-boxes">
+            <div class="box" data-color="Red"></div>
+            <div class="box" data-color="Blue"></div>
+            <div class="box" data-color="Green"></div>
+            <div class="box" data-color="Yellow"></div>
+        </div>
+
+        <button id="startBtn">Start Game</button>
+        <button id="resetBtn">Reset</button>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
